@@ -134,6 +134,7 @@ class _OutlineButtonDemo extends StatelessWidget {
             highlightedBorderColor:
                 Theme.of(context).colorScheme.onSurface.withOpacity(0.12),
             child: Text(GalleryLocalizations.of(context).buttonText),
+            autofocus: true,
             onPressed: () {},
           ),
           SizedBox(height: 12),
@@ -201,6 +202,7 @@ class _FloatingActionButtonDemo extends StatelessWidget {
           ),
           SizedBox(height: 20),
           FloatingActionButton.extended(
+            //autofocus: true,
             icon: const Icon(Icons.add),
             label: Text(GalleryLocalizations.of(context).buttonTextCreate),
             onPressed: () {},
